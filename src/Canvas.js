@@ -6,7 +6,7 @@ export default class Canvas {
     this.width = width
     this.height = height
     let { canvas, ctx } = createCanvas(width, height, opt)
-    ctx.fillStyle = '#000000';
+    ctx.fillStyle = '#FFFFFF';
     ctx.fillRect(-width / 2, -height / 2, width, height);
     this.el = canvas
     this.ctx = ctx

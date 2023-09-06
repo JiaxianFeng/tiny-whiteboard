@@ -21,6 +21,8 @@ export const createCanvas = (
   let ctx = canvas.getContext('2d')
   canvas.width = width
   canvas.height = height
+  ctx.fillStyle = '#FFFFFF';
+  ctx.fillRect(canvas.width / 2, canvas.height / 2, canvas.width, canvas.height);
   // 画布原点移动到画布中心
   if (!opt.noTranslate) {
     ctx.translate(canvas.width / 2, canvas.height / 2)

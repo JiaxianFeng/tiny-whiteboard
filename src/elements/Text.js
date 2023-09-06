@@ -18,13 +18,13 @@ export default class Text extends BaseElement {
     })
     this.text = opts.text || ''
     this.style.fillStyle =
-      opts.style?.fillStyle || this.app.state.strokeStyle || '#000'
-    this.style.fontSize = opts.style?.fontSize || this.app.state.fontSize || 18
-    this.style.lineHeightRatio = opts.style?.lineHeightRatio || 1.5
+      opts.style ? opts.style.fillStyle || this.app.state.strokeStyle || '#000' : '#000'
+    this.style.fontSize = opts.style ? opts.style.fontSize || this.app.state.fontSize || 18 : 18
+    this.style.lineHeightRatio = opts.style ? opts.style.lineHeightRatio || 1.5 : 1.5
     this.style.fontFamily =
-      opts.style?.fontFamily ||
-      this.app.state.fontFamily ||
-      '微软雅黑, Microsoft YaHei'
+      opts.style ? opts.style.fontFamily ||
+        this.app.state.fontFamily ||
+        '微软雅黑, Microsoft YaHei' : '微软雅黑, Microsoft YaHei'
   }
 
   // 序列化

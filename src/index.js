@@ -22,7 +22,7 @@ import Grid from './Grid'
 import Mode from './Mode'
 import KeyCommand from './KeyCommand'
 import Render from './Render'
-import elements from './elements'
+import elements from './elements/index'
 import Group from './Group'
 
 // 主类

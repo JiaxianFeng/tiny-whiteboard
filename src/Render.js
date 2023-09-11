@@ -15,6 +15,8 @@ export default class Render {
   clearCanvas() {
     let { width, height } = this.app
     this.app.ctx.clearRect(-width / 2, -height / 2, width, height)
+    this.app.ctx.fillStyle = '#fff'
+    this.app.ctx.fillRect(-width / 2, -height / 2, width, height)
     return this
   }
 
